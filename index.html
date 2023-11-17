@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css transform</title>
+        <style>
+            [data-a=red]{
+                width: 400px;
+                height: 400px;
+                background: red;
+                border: 10px solid black;
+                transition: all 2s linear;
+                /*
+                margin:T/B,L/R;
+                */
+                margin: 150px auto;
+                transform: rotate(0deg) scale(1,1) translate(0px,0px);
+            }
+            div[data-a="red"]:hover {
+                transform: rotate(45deg) scale(1.3,1.3) translate(100px,0px);
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div data-a="red"></div>
+    </body>
+</html>
